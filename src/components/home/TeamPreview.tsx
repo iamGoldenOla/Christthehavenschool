@@ -68,7 +68,7 @@ const TeamPreview = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               className={`bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-card-lg transition-all group ${
-                member.featured ? "ring-2 ring-yellow" : ""
+                member.featured ? "ring-2 ring-secondary" : ""
               }`}
             >
               <div className="relative h-56 overflow-hidden">
@@ -79,7 +79,7 @@ const TeamPreview = () => {
                 />
                 {member.featured && (
                   <div className="absolute top-3 left-3">
-                    <span className="inline-flex items-center gap-1 px-3 py-1 bg-yellow text-primary rounded-full text-xs font-medium">
+                    <span className="inline-flex items-center gap-1 px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-xs font-medium">
                       <Award size={12} />
                       Leader
                     </span>

@@ -67,7 +67,7 @@ const About = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <span className="text-yellow font-medium text-sm uppercase tracking-wider">
+              <span className="text-secondary font-medium text-sm uppercase tracking-wider">
                 Our Story
               </span>
               <h2 className="heading-section text-foreground mt-3 mb-6">
@@ -102,7 +102,7 @@ const About = () => {
                 alt="School building"
                 className="rounded-2xl shadow-card-lg"
               />
-              <div className="absolute -bottom-6 -left-6 bg-yellow text-primary p-6 rounded-2xl shadow-lg">
+              <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-6 rounded-2xl shadow-lg">
                 <p className="font-serif text-4xl font-bold">10+</p>
                 <p className="text-sm">Years of Excellence</p>
               </div>
@@ -120,7 +120,7 @@ const About = () => {
             viewport={{ once: true }}
             className="text-center max-w-3xl mx-auto mb-12"
           >
-            <span className="text-yellow font-medium text-sm uppercase tracking-wider">
+            <span className="text-secondary font-medium text-sm uppercase tracking-wider">
               Leadership
             </span>
             <h2 className="heading-section text-foreground mt-3">
@@ -139,14 +139,14 @@ const About = () => {
                 <img
                   src={proprietressImage}
                   alt="Mrs Bisola Toriola - Proprietress"
-                  className="w-full h-auto rounded-2xl shadow-lg border-4 border-yellow"
+                  className="w-full h-auto rounded-2xl shadow-lg border-4 border-secondary"
                 />
               </div>
               <div>
                 <h3 className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-2">
                   Mrs Bisola Toriola
                 </h3>
-                <p className="text-yellow font-semibold mb-4">Proprietress</p>
+                <p className="text-secondary font-semibold mb-4">Proprietress</p>
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   With a passion for education and child development, Mrs Bisola Toriola 
                   founded Christ The Haven School with a vision to provide quality education 
@@ -189,10 +189,10 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="bg-card rounded-2xl p-8 md:p-12 shadow-card border-t-4 border-yellow"
+              className="bg-card rounded-2xl p-8 md:p-12 shadow-card border-t-4 border-primary"
             >
-              <div className="w-16 h-16 rounded-xl bg-yellow/10 flex items-center justify-center mb-6">
-                <Target className="text-yellow" size={32} />
+              <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
+                <Target className="text-secondary" size={32} />
               </div>
               <h3 className="font-serif text-2xl font-bold text-foreground mb-4">Our Mission</h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -214,7 +214,7 @@ const About = () => {
             viewport={{ once: true }}
             className="text-center max-w-3xl mx-auto mb-16"
           >
-            <span className="text-yellow font-medium text-sm uppercase tracking-wider">
+            <span className="text-secondary font-medium text-sm uppercase tracking-wider">
               What We Stand For
             </span>
             <h2 className="heading-section text-foreground mt-3">
@@ -232,8 +232,8 @@ const About = () => {
                 transition={{ delay: index * 0.1 }}
                 className="text-center bg-card rounded-2xl p-8 shadow-card hover:shadow-card-lg transition-all"
               >
-                <div className="w-16 h-16 rounded-xl bg-yellow/10 flex items-center justify-center mx-auto mb-4">
-                  <value.icon className="text-yellow" size={32} />
+                <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                  <value.icon className="text-secondary" size={32} />
                 </div>
                 <h3 className="font-serif text-xl font-bold text-foreground mb-2">
                   {value.title}

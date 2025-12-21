@@ -107,10 +107,10 @@ const Services = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-card rounded-2xl p-8 shadow-card hover:shadow-lg transition-all duration-300 group border-t-4 border-yellow"
+                className="bg-card rounded-2xl p-8 shadow-card hover:shadow-lg transition-all duration-300 group border-t-4 border-primary"
               >
-                <div className="w-14 h-14 rounded-xl bg-yellow/10 flex items-center justify-center mb-6 group-hover:bg-yellow group-hover:scale-110 transition-all duration-300">
-                  <service.icon className="w-7 h-7 text-yellow group-hover:text-primary transition-colors" />
+                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                  <service.icon className="w-7 h-7 text-secondary group-hover:text-primary-foreground transition-colors" />
                 </div>
                 <h3 className="font-serif text-xl font-bold text-foreground mb-3">
                   {service.title}
@@ -121,7 +121,7 @@ const Services = () => {
                 <ul className="space-y-2">
                   {service.features.map((feature) => (
                     <li key={feature} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <div className="w-1.5 h-1.5 rounded-full bg-yellow" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-secondary" />
                       {feature}
                     </li>
                   ))}
@@ -141,7 +141,7 @@ const Services = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <span className="text-yellow font-medium text-sm uppercase tracking-wider">
+            <span className="text-secondary font-medium text-sm uppercase tracking-wider">
               Student Activities
             </span>
             <h2 className="heading-section text-foreground mt-3 mb-4">
@@ -162,8 +162,8 @@ const Services = () => {
                 transition={{ delay: index * 0.1 }}
                 className="bg-card rounded-2xl p-6 text-center shadow-card hover:shadow-card-lg transition-all group"
               >
-                <div className="w-14 h-14 rounded-xl bg-yellow/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-yellow transition-colors">
-                  <club.icon className="text-yellow group-hover:text-primary" size={28} />
+                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary transition-colors">
+                  <club.icon className="text-secondary group-hover:text-primary-foreground" size={28} />
                 </div>
                 <h3 className="font-serif text-lg font-bold text-foreground mb-2">{club.title}</h3>
                 <p className="text-sm text-muted-foreground">{club.description}</p>
@@ -182,7 +182,7 @@ const Services = () => {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <span className="flex items-center justify-center gap-2 text-yellow font-medium text-sm uppercase tracking-wider mb-3">
+            <span className="flex items-center justify-center gap-2 text-secondary font-medium text-sm uppercase tracking-wider mb-3">
               <Sparkles size={16} />
               Coming Soon
             </span>
@@ -202,11 +202,11 @@ const Services = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="bg-card rounded-xl p-6 text-center shadow-sm border-2 border-dashed border-yellow/30"
+                className="bg-card rounded-xl p-6 text-center shadow-sm border-2 border-dashed border-secondary/30"
               >
                 <div className="flex items-center justify-center gap-2 mb-2">
-                  <Sparkles size={14} className="text-yellow" />
-                  <span className="text-xs text-yellow font-medium">Coming Soon</span>
+                  <Sparkles size={14} className="text-secondary" />
+                  <span className="text-xs text-secondary font-medium">Coming Soon</span>
                 </div>
                 <p className="font-medium text-foreground">{service}</p>
               </motion.div>
@@ -245,7 +245,7 @@ const Services = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.05 }}
-                className="bg-card rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-yellow"
+                className="bg-card rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-primary"
               >
                 <p className="font-medium text-foreground">{item}</p>
               </motion.div>

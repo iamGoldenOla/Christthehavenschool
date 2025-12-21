@@ -140,7 +140,7 @@ const News = () => {
               <input
                 type="text"
                 placeholder="Search articles..."
-                className="w-full pl-12 pr-4 py-3 rounded-xl bg-card border border-border focus:outline-none focus:ring-2 focus:ring-yellow"
+                className="w-full pl-12 pr-4 py-3 rounded-xl bg-card border border-border focus:outline-none focus:ring-2 focus:ring-secondary"
               />
             </div>
             <div className="flex flex-wrap gap-2">
@@ -149,8 +149,8 @@ const News = () => {
                   key={category}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                     category === "All"
-                      ? "bg-yellow text-primary"
-                      : "bg-card text-foreground hover:bg-yellow/10"
+                      ? "bg-primary text-primary-foreground"
+                      : "bg-card text-foreground hover:bg-primary/10"
                   }`}
                 >
                   {category}
@@ -178,13 +178,13 @@ const News = () => {
                   alt={article.title}
                   className="w-full h-80 lg:h-96 object-cover"
                 />
-                <span className="absolute top-4 left-4 px-4 py-1 bg-yellow text-primary rounded-full text-sm font-medium">
+                <span className="absolute top-4 left-4 px-4 py-1 bg-secondary text-secondary-foreground rounded-full text-sm font-medium">
                   Featured
                 </span>
               </div>
               <div>
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="px-3 py-1 bg-yellow/10 text-yellow rounded-full text-xs font-medium">
+                  <span className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs font-medium">
                     {article.category}
                   </span>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -199,7 +199,7 @@ const News = () => {
                   {article.excerpt}
                 </p>
                 <Link to={`/news/${article.id}`}>
-                  <Button className="bg-yellow text-primary hover:bg-yellow-dark">
+                  <Button className="bg-primary text-primary-foreground hover:bg-navy-light">
                     Read Full Article
                     <ArrowRight size={18} />
                   </Button>
@@ -240,7 +240,7 @@ const News = () => {
                     alt={article.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <span className="absolute top-4 left-4 px-3 py-1 bg-yellow text-primary rounded-full text-xs font-medium">
+                  <span className="absolute top-4 left-4 px-3 py-1 bg-secondary text-secondary-foreground rounded-full text-xs font-medium">
                     {article.category}
                   </span>
                 </div>
@@ -257,7 +257,7 @@ const News = () => {
                   </p>
                   <Link 
                     to={`/news/${article.id}`}
-                    className="inline-flex items-center text-sm font-medium text-yellow hover:underline"
+                    className="inline-flex items-center text-sm font-medium text-secondary hover:underline"
                   >
                     Read More
                     <ArrowRight size={14} className="ml-1" />
@@ -269,7 +269,7 @@ const News = () => {
 
           {/* Load More */}
           <div className="text-center mt-12">
-            <Button variant="outline" size="lg" className="border-yellow text-yellow hover:bg-yellow hover:text-primary">
+            <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
               Load More Articles
             </Button>
           </div>

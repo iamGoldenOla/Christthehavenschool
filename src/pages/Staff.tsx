@@ -94,7 +94,7 @@ const Staff = () => {
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute top-4 left-4">
-                  <span className="inline-flex items-center gap-2 px-4 py-2 bg-yellow text-primary rounded-full text-sm font-medium">
+                  <span className="inline-flex items-center gap-2 px-4 py-2 bg-secondary text-secondary-foreground rounded-full text-sm font-medium">
                     <Award size={16} />
                     Proprietress
                   </span>
