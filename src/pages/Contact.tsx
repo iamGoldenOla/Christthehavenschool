@@ -38,7 +38,7 @@ const Contact = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <span className="text-yellow font-medium text-sm uppercase tracking-wider">
+              <span className="text-secondary font-medium text-sm uppercase tracking-wider">
                 Get in Touch
               </span>
               <h2 className="heading-section text-foreground mt-3 mb-6">
@@ -51,8 +51,8 @@ const Contact = () => {
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-yellow/10 flex items-center justify-center shrink-0">
-                    <MapPin className="text-yellow" size={24} />
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                    <MapPin className="text-secondary" size={24} />
                   </div>
                   <div>
                     <h3 className="font-medium text-foreground mb-1">Address</h3>
@@ -65,8 +65,8 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-yellow/10 flex items-center justify-center shrink-0">
-                    <Phone className="text-yellow" size={24} />
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                    <Phone className="text-secondary" size={24} />
                   </div>
                   <div>
                     <h3 className="font-medium text-foreground mb-1">Phone</h3>
@@ -77,8 +77,8 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-yellow/10 flex items-center justify-center shrink-0">
-                    <Mail className="text-yellow" size={24} />
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                    <Mail className="text-secondary" size={24} />
                   </div>
                   <div>
                     <h3 className="font-medium text-foreground mb-1">Email</h3>
@@ -89,8 +89,8 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-yellow/10 flex items-center justify-center shrink-0">
-                    <Clock className="text-yellow" size={24} />
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                    <Clock className="text-secondary" size={24} />
                   </div>
                   <div>
                     <h3 className="font-medium text-foreground mb-1">Office Hours</h3>
@@ -108,7 +108,7 @@ const Contact = () => {
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="bg-card rounded-2xl p-8 shadow-card border-t-4 border-yellow"
+              className="bg-card rounded-2xl p-8 shadow-card border-t-4 border-primary"
             >
               <h3 className="font-serif text-2xl font-bold text-foreground mb-6">
                 Send Us a Message
@@ -121,7 +121,7 @@ const Contact = () => {
                     </label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 rounded-lg bg-background border border-border focus:outline-none focus:ring-2 focus:ring-yellow"
+                      className="w-full px-4 py-3 rounded-lg bg-background border border-border focus:outline-none focus:ring-2 focus:ring-secondary"
                       placeholder="John"
                     />
                   </div>
@@ -131,7 +131,7 @@ const Contact = () => {
                     </label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 rounded-lg bg-background border border-border focus:outline-none focus:ring-2 focus:ring-yellow"
+                      className="w-full px-4 py-3 rounded-lg bg-background border border-border focus:outline-none focus:ring-2 focus:ring-secondary"
                       placeholder="Doe"
                     />
                   </div>
@@ -143,7 +143,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="email"
-                    className="w-full px-4 py-3 rounded-lg bg-background border border-border focus:outline-none focus:ring-2 focus:ring-yellow"
+                      className="w-full px-4 py-3 rounded-lg bg-background border border-border focus:outline-none focus:ring-2 focus:ring-secondary"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -152,7 +152,7 @@ const Contact = () => {
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Subject
                   </label>
-                  <select className="w-full px-4 py-3 rounded-lg bg-background border border-border focus:outline-none focus:ring-2 focus:ring-yellow">
+                  <select className="w-full px-4 py-3 rounded-lg bg-background border border-border focus:outline-none focus:ring-2 focus:ring-secondary">
                     <option>General Inquiry</option>
                     <option>Admissions</option>
                     <option>Academics</option>
@@ -167,12 +167,12 @@ const Contact = () => {
                   </label>
                   <textarea
                     rows={5}
-                    className="w-full px-4 py-3 rounded-lg bg-background border border-border focus:outline-none focus:ring-2 focus:ring-yellow resize-none"
+                    className="w-full px-4 py-3 rounded-lg bg-background border border-border focus:outline-none focus:ring-2 focus:ring-secondary resize-none"
                     placeholder="Your message..."
                   />
                 </div>
 
-                <Button className="w-full bg-yellow text-primary hover:bg-yellow-dark" size="lg">
+                <Button className="w-full bg-primary text-primary-foreground hover:bg-navy-light" size="lg">
                   Send Message
                   <Send size={18} />
                 </Button>

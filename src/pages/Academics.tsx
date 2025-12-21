@@ -64,7 +64,7 @@ const Academics = () => {
             viewport={{ once: true }}
             className="text-center max-w-3xl mx-auto mb-16"
           >
-            <span className="text-yellow font-medium text-sm uppercase tracking-wider">
+            <span className="text-secondary font-medium text-sm uppercase tracking-wider">
               Our Programs
             </span>
             <h2 className="heading-section text-foreground mt-3 mb-4">
@@ -84,10 +84,10 @@ const Academics = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-card rounded-2xl p-8 shadow-card hover:shadow-card-lg transition-all border-t-4 border-yellow"
+                className="bg-card rounded-2xl p-8 shadow-card hover:shadow-card-lg transition-all border-t-4 border-primary"
               >
-                <div className="w-14 h-14 rounded-xl bg-yellow/10 flex items-center justify-center mb-4">
-                  <program.icon className="text-yellow" size={28} />
+                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <program.icon className="text-secondary" size={28} />
                 </div>
                 <h3 className="font-serif text-xl font-bold text-foreground mb-2">
                   {program.title}
@@ -96,7 +96,7 @@ const Academics = () => {
                 <ul className="space-y-2">
                   {program.features.map((feature) => (
                     <li key={feature} className="flex items-center gap-2 text-sm">
-                      <div className="w-2 h-2 rounded-full bg-yellow" />
+                      <div className="w-2 h-2 rounded-full bg-secondary" />
                       <span className="text-foreground">{feature}</span>
                     </li>
                   ))}
@@ -116,7 +116,7 @@ const Academics = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <span className="text-yellow font-medium text-sm uppercase tracking-wider">
+              <span className="text-secondary font-medium text-sm uppercase tracking-wider">
                 Curriculum
               </span>
               <h2 className="heading-section text-foreground mt-3 mb-6">
@@ -137,8 +137,8 @@ const Academics = () => {
                   "Religious Studies",
                 ].map((item) => (
                   <div key={item} className="flex items-center gap-3">
-                    <div className="w-6 h-6 rounded-full bg-yellow flex items-center justify-center">
-                      <span className="text-primary text-xs font-bold">✓</span>
+                    <div className="w-6 h-6 rounded-full bg-secondary flex items-center justify-center">
+                      <span className="text-secondary-foreground text-xs font-bold">✓</span>
                     </div>
                     <span className="text-foreground">{item}</span>
                   </div>
@@ -170,7 +170,7 @@ const Academics = () => {
             viewport={{ once: true }}
             className="text-center max-w-3xl mx-auto mb-16"
           >
-            <span className="text-yellow font-medium text-sm uppercase tracking-wider">
+            <span className="text-secondary font-medium text-sm uppercase tracking-wider">
               Beyond The Classroom
             </span>
             <h2 className="heading-section text-foreground mt-3 mb-4">
@@ -192,8 +192,8 @@ const Academics = () => {
                 transition={{ delay: index * 0.1 }}
                 className="group bg-card rounded-2xl p-6 shadow-card hover:shadow-card-lg transition-all hover:-translate-y-1"
               >
-                <div className="w-12 h-12 rounded-xl bg-yellow/10 flex items-center justify-center mb-4 group-hover:bg-yellow transition-colors">
-                  <activity.icon className="text-yellow group-hover:text-primary" size={24} />
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-colors">
+                  <activity.icon className="text-secondary group-hover:text-primary-foreground" size={24} />
                 </div>
                 <h3 className="font-serif text-lg font-bold text-foreground mb-2">
                   {activity.title}
@@ -210,16 +210,16 @@ const Academics = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: (extracurriculars.length + index) * 0.1 }}
-                className="group bg-card rounded-2xl p-6 shadow-card border-2 border-dashed border-yellow/50"
+                className="group bg-card rounded-2xl p-6 shadow-card border-2 border-dashed border-secondary/50"
               >
-                <div className="w-12 h-12 rounded-xl bg-yellow/10 flex items-center justify-center mb-4">
-                  <activity.icon className="text-yellow" size={24} />
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
+                  <activity.icon className="text-secondary" size={24} />
                 </div>
                 <div className="flex items-center gap-2 mb-2">
                   <h3 className="font-serif text-lg font-bold text-foreground">
                     {activity.title}
                   </h3>
-                  <span className="flex items-center gap-1 px-2 py-0.5 bg-yellow/10 text-yellow text-xs rounded-full">
+                  <span className="flex items-center gap-1 px-2 py-0.5 bg-secondary/10 text-secondary text-xs rounded-full">
                     <Sparkles size={12} />
                     Coming Soon
                   </span>
