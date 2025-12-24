@@ -53,8 +53,6 @@ const upcomingEvents = [
   {
     id: 1,
     title: "Edufair 2026",
-    date: "March 15-17, 2026",
-    time: "9:00 AM - 5:00 PM",
     location: "School Main Campus",
     description: "Join us for our annual education fair featuring interactive exhibitions, workshops, college admissions guidance, and career counseling sessions.",
     featured: true,
@@ -62,8 +60,6 @@ const upcomingEvents = [
   {
     id: 2,
     title: "Parent-Teacher Conference",
-    date: "January 20, 2026",
-    time: "2:00 PM - 6:00 PM",
     location: "School Auditorium",
     description: "Discuss your child's progress with teachers and explore ways to support their learning journey.",
     featured: false,
@@ -71,8 +67,6 @@ const upcomingEvents = [
   {
     id: 3,
     title: "Science Fair 2026",
-    date: "February 10, 2026",
-    time: "10:00 AM - 4:00 PM",
     location: "Science Block",
     description: "Witness innovative student projects and scientific discoveries at our annual science exhibition.",
     featured: false,
@@ -80,8 +74,6 @@ const upcomingEvents = [
   {
     id: 4,
     title: "Cultural Day Celebration",
-    date: "April 5, 2026",
-    time: "9:00 AM - 3:00 PM",
     location: "School Grounds",
     description: "A celebration of cultural diversity with traditional performances, food, and exhibitions.",
     featured: false,
@@ -232,14 +224,6 @@ const Events = () => {
                       {event.description}
                     </p>
                     <div className="flex flex-wrap gap-4 text-sm">
-                      <div className="flex items-center gap-2">
-                        <Calendar size={16} className={event.featured ? "text-secondary" : "text-secondary"} />
-                        <span>{event.date}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Clock size={16} className={event.featured ? "text-secondary" : "text-secondary"} />
-                        <span>{event.time}</span>
-                      </div>
                       <div className="flex items-center gap-2">
                         <MapPin size={16} className={event.featured ? "text-secondary" : "text-secondary"} />
                         <span>{event.location}</span>
