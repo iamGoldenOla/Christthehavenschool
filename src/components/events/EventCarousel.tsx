@@ -2,12 +2,12 @@ import { useState, useEffect, useCallback } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-interface CulturalDayCarouselProps {
+interface EventCarouselProps {
   images: { src: string; alt: string }[];
   onImageClick: (src: string) => void;
 }
 
-const CulturalDayCarousel = ({ images, onImageClick }: CulturalDayCarouselProps) => {
+const EventCarousel = ({ images, onImageClick }: EventCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
@@ -129,4 +129,4 @@ const CulturalDayCarousel = ({ images, onImageClick }: CulturalDayCarouselProps)
   );
 };
 
-export default CulturalDayCarousel;
+export default EventCarousel;
