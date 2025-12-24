@@ -118,7 +118,7 @@ const HeroSlider = () => {
       </AnimatePresence>
 
       {/* Content */}
-      <div className="absolute inset-0 flex items-center">
+      <div className="absolute inset-0 flex items-center justify-center">
         <div className="container-custom">
           <AnimatePresence mode="wait">
             <motion.div
@@ -127,7 +127,7 @@ const HeroSlider = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -30 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="max-w-2xl text-primary-foreground"
+              className="max-w-3xl mx-auto text-center text-primary-foreground"
             >
               <span className="inline-block px-4 py-2 bg-secondary text-secondary-foreground rounded-full text-sm font-medium mb-6">
                 {slides[currentSlide].subtitle}
@@ -135,10 +135,10 @@ const HeroSlider = () => {
               <h1 className="heading-display mb-6 leading-tight">
                 {slides[currentSlide].title}
               </h1>
-              <p className="text-lg md:text-xl opacity-90 mb-8 leading-relaxed">
+              <p className="text-lg md:text-xl opacity-90 mb-8 leading-relaxed max-w-2xl mx-auto">
                 {slides[currentSlide].description}
               </p>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 justify-center">
                 <Button variant="sky" size="lg">
                   Explore Programs
                 </Button>
@@ -151,19 +151,21 @@ const HeroSlider = () => {
         </div>
       </div>
 
-      {/* Navigation Arrows */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-card/20 backdrop-blur-sm flex items-center justify-center text-primary-foreground hover:bg-card/40 transition-all"
-      >
-        <ChevronLeft size={24} />
-      </button>
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-card/20 backdrop-blur-sm flex items-center justify-center text-primary-foreground hover:bg-card/40 transition-all"
-      >
-        <ChevronRight size={24} />
-      </button>
+      {/* Navigation Arrows - positioned at bottom */}
+      <div className="absolute bottom-24 left-1/2 -translate-x-1/2 flex items-center gap-6">
+        <button
+          onClick={prevSlide}
+          className="w-10 h-10 rounded-full bg-card/20 backdrop-blur-sm flex items-center justify-center text-primary-foreground hover:bg-card/40 transition-all border border-primary-foreground/20"
+        >
+          <ChevronLeft size={20} />
+        </button>
+        <button
+          onClick={nextSlide}
+          className="w-10 h-10 rounded-full bg-card/20 backdrop-blur-sm flex items-center justify-center text-primary-foreground hover:bg-card/40 transition-all border border-primary-foreground/20"
+        >
+          <ChevronRight size={20} />
+        </button>
+      </div>
 
       {/* Slide Indicators */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
