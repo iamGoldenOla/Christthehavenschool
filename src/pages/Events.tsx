@@ -6,6 +6,7 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import ExcursionCarousel from "@/components/events/ExcursionCarousel";
 import CulturalDayCarousel from "@/components/events/CulturalDayCarousel";
+import EventCarousel from "@/components/events/EventCarousel";
 
 import excursion1 from "@/assets/gallery/excursion-1.jpg";
 import excursion2 from "@/assets/gallery/excursion-2.jpg";
@@ -276,7 +277,7 @@ const Events = () => {
                   <p className="text-muted-foreground">{category.description}</p>
                 </div>
                 
-                {/* Carousel for Excursion and Cultural Day, Grid for others */}
+                {/* All categories use carousel */}
                 {category.id === "excursion" ? (
                   <ExcursionCarousel 
                     images={category.images} 
@@ -288,29 +289,10 @@ const Events = () => {
                     onImageClick={(src) => setSelectedImage(src)} 
                   />
                 ) : (
-                  <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
-                    {category.images.map((image, index) => (
-                      <motion.div
-                        key={index}
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: index * 0.1 }}
-                        className="relative group cursor-pointer rounded-2xl overflow-hidden shadow-card"
-                        onClick={() => setSelectedImage(image.src)}
-                      >
-                        <img
-                          src={image.src}
-                          alt={image.alt}
-                          className="w-full h-64 md:h-80 object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
-                        <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/40 transition-colors flex items-center justify-center">
-                          <span className="text-primary-foreground font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-                            View Image
-                          </span>
-                        </div>
-                      </motion.div>
-                    ))}
-                  </div>
+                  <EventCarousel 
+                    images={category.images} 
+                    onImageClick={(src) => setSelectedImage(src)} 
+                  />
                 )}
               </motion.div>
             )
