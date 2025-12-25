@@ -155,10 +155,10 @@ const News = () => {
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   transition={{ delay: index * 0.15, duration: 0.5 }}
                   whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                  className="group relative bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:border-yellow/50 transition-all duration-300 hover:shadow-2xl hover:shadow-yellow/10"
+                  className="group relative bg-black/20 backdrop-blur-md rounded-2xl p-6 border border-white/5 hover:border-yellow/30 transition-all duration-300 hover:shadow-xl hover:shadow-yellow/5"
                 >
                   {/* Glow Effect */}
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-yellow/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-yellow/3 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   
                   <div className="relative z-10">
                     {/* Type Badge & Date */}
