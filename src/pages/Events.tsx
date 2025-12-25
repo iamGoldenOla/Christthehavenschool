@@ -197,16 +197,16 @@ const Events = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
-              className="heading-display mb-6"
+              className="heading-display text-white mb-6"
             >
-              Upcoming <span className="text-secondary">Events</span>
+              Upcoming <span className="text-sky">Events</span>
             </motion.h1>
             
             <motion.p 
               initial={{ opacity: 0 }}
               animate={{ opacity: 0.9 }}
               transition={{ delay: 0.5, duration: 0.6 }}
-              className="text-lg md:text-xl max-w-2xl mx-auto"
+              className="text-lg md:text-xl max-w-2xl mx-auto text-white/90"
             >
               Join us for memorable experiences that inspire, educate, and bring our community together
             </motion.p>
