@@ -155,7 +155,7 @@ const News = () => {
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   transition={{ delay: index * 0.15, duration: 0.5 }}
                   whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                  className="group relative bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 hover:border-yellow/50 transition-all duration-300 hover:shadow-2xl hover:shadow-yellow/10"
+                  className="group relative bg-white/5 backdrop-blur-md rounded-2xl p-6 border border-white/10 hover:border-yellow/50 transition-all duration-300 hover:shadow-2xl hover:shadow-yellow/10"
                 >
                   {/* Glow Effect */}
                   <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-yellow/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
