@@ -29,6 +29,11 @@ jobs:
       env:
         VITE_API_URL: ${{ secrets.VITE_API_URL }}  # Frontend environment variable
 
+    - name: Verify build output
+      run: |
+        ls -la dist/
+        du -sh dist/
+
     - name: Deploy frontend to cPanel via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
@@ -38,3 +43,5 @@ jobs:
         server-dir: ${{ secrets.FTP_DIR }}  # Path for frontend files
         local-dir: ./dist/
         port: 21
+        # Enable logging to help debug
+        log-level: verbose
