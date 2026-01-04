@@ -24,11 +24,12 @@
     Required secrets:
     □ FTP_HOST = 163.61.188.6
     □ FTP_USERNAME = christt2
-    □ FTP_PASSWORD = [your_password]
+    □ FTP_PASSWORD = [set in GitHub - never share!]
     □ FTP_PORT = 21
     □ FTP_DIR = public_html/
     
-    ⚠️  If ANY missing, add them now!
+    ⚠️  SECURITY: Never put password in files or share it!
+        GitHub Secrets are encrypted and secure. That's the right place.
 
 2️⃣  TRIGGER Deployment Test
     Go to: https://github.com/iamGoldenOla/christthehavenschool/actions
@@ -78,6 +79,12 @@ GitHub Repo:   https://github.com/iamGoldenOla/christthehavenschool
 
 ❓ COMMON ISSUES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+❌ 404 errors on page refresh
+   → Make sure .htaccess is deployed to cPanel
+   → Check: Settings → File Manager → Navigate to public_html/.htaccess
+   → Should exist and contain React Router rewrite rules
+   → If missing, manually upload the .htaccess file
+
 ❌ Secrets not set
    → Go to GitHub Settings → Secrets → Actions
    → Add all 5 FTP secrets
