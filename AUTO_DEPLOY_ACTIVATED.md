@@ -63,7 +63,7 @@ Your secrets are set in GitHub:
 ✅ FTP_USERNAME = christt2
 ✅ FTP_PASSWORD = (configured)
 ✅ FTP_PORT     = 21
-✅ FTP_DIR      = public_html/
+✅ FTP_DIR      = /home/christt2/public_html/
 ```
 
 **Status**: ✅ READY TO UPLOAD
